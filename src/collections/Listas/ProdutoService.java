@@ -12,5 +12,10 @@ public class ProdutoService {
 
     }
 
+    public void listarProdutos(){
+
+        produtos.forEach(produto -> System.out.println(produto));
+    }
+
 
 }
