@@ -30,5 +30,8 @@ public class TesteListaProdutos {
                 produto.verificarProduto(produto2)
         );
 
+        System.out.println(
+               produto.quantidadeProdutos()
+        );
     }
 }

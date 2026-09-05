@@ -28,5 +28,10 @@ public class ProdutoService {
 
     }
 
+    public int quantidadeProdutos(){
+
+        return produtos.size();
+    }
+
 
 }
