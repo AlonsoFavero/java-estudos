@@ -22,5 +22,11 @@ public class ProdutoService {
         produtos.remove(produto);
     }
 
+    public boolean verificarProduto(Produto produto){
+
+       return produtos.contains(produto);
+
+    }
+
 
 }

@@ -25,5 +25,10 @@ public class TesteListaProdutos {
         produto.removerProdutos(produto1);
 
         produto.listarProdutos();
+
+        System.out.println(
+                produto.verificarProduto(produto2)
+        );
+
     }
 }
