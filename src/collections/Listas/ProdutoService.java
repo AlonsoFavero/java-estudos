@@ -33,5 +33,8 @@ public class ProdutoService {
         return produtos.size();
     }
 
+    public Produto buscarProduto(int indice){
 
+        return produtos.get(indice);
+    }
 }

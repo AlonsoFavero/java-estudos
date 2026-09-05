@@ -33,5 +33,9 @@ public class TesteListaProdutos {
         System.out.println(
                produto.quantidadeProdutos()
         );
+
+        System.out.println(
+                produto.buscarProduto(0)
+        );
     }
 }
