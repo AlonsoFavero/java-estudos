@@ -22,6 +22,8 @@ public class TesteListaProdutos {
         produto.adicionarProduto(produto2);
         produto.adicionarProduto(produto3);
 
+        produto.removerProdutos(produto1);
+
         produto.listarProdutos();
     }
 }

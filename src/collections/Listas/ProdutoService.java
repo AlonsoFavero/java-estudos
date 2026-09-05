@@ -16,6 +16,11 @@ public class ProdutoService {
 
         produtos.forEach(produto -> System.out.println(produto));
     }
+    
+    public void removerProdutos(Produto produto){
+
+        produtos.remove(produto);
+    }
 
 
 }
