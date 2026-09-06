@@ -22,5 +22,7 @@ public class TesteHashSet {
 
         System.out.println(nomes.size());
 
+        System.out.println(nomes.isEmpty());
+
     }
 }
