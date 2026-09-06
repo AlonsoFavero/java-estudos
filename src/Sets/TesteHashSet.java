@@ -26,6 +26,8 @@ public class TesteHashSet {
 
         System.out.println(produtos);
         System.out.println(produto1.equals(produto2));
+        System.out.println(produto1.hashCode());
+        System.out.println(produto2.hashCode());
 
         nomes.add("João");
         nomes.add("Maria");
