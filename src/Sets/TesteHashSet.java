@@ -19,7 +19,7 @@ public class TesteHashSet {
         Produto produto2 = new Produto();
 
         produto2.nome = "notebook";
-        produto2.preco = 1400;
+        produto2.preco = 1300;
 
         produtos.add(produto1);
         produtos.add(produto2);
