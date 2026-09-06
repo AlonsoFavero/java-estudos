@@ -2,7 +2,7 @@ package collections.Listas;
 
 import java.util.Objects;
 
-public class Produto {
+public class Produto implements Comparable <Produto>{
 
    public String nome;
    public double preco;
@@ -29,5 +29,10 @@ public class Produto {
     public int hashCode(){
 
         return Objects.hash(nome,preco);
+    }
+
+    @Override
+    public int compareTo(Produto produto) {
+        return Double.compare(preco,produto.preco);
     }
 }
