@@ -13,8 +13,12 @@ public class TesteHashSet {
         nomes.add("João");
 
         System.out.println(nomes);
+
         System.out.println(nomes.contains("Maria"));
         System.out.println(nomes.contains("Carlos"));
+
+        System.out.println(nomes.remove("Pedro"));
+        System.out.println(nomes);
 
     }
 }
