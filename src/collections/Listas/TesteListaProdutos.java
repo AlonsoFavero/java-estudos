@@ -8,6 +8,7 @@ public class TesteListaProdutos {
         Produto produto1 = new Produto();
         Produto produto2 = new Produto();
         Produto produto3 = new Produto();
+        Produto produto4 = new Produto();
 
         produto1.nome = "teclado";
         produto1.preco = 200;
@@ -17,6 +18,9 @@ public class TesteListaProdutos {
 
         produto3.nome = "fone de ouvido";
         produto3.preco = 500;
+
+        produto4.nome = "notebook";
+        produto4.preco = 1200;
 
         produto.adicionarProduto(produto1);
         produto.adicionarProduto(produto2);
@@ -37,5 +41,11 @@ public class TesteListaProdutos {
         System.out.println(
                 produto.buscarProduto(0)
         );
+
+        System.out.println(
+                produto.alterarProduto(0,produto4)
+        );
+
+        produto.listarProdutos();
     }
 }

@@ -37,4 +37,9 @@ public class ProdutoService {
 
         return produtos.get(indice);
     }
+
+    public Produto alterarProduto(int indice, Produto novoProduto){
+
+        return produtos.set(indice ,novoProduto);
+    }
 }
