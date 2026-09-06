@@ -20,5 +20,7 @@ public class TesteHashSet {
         System.out.println(nomes.remove("Pedro"));
         System.out.println(nomes);
 
+        System.out.println(nomes.size());
+
     }
 }
