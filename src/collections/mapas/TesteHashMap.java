@@ -31,17 +31,19 @@ public class TesteHashMap {
         produto5.nome = "macbook";
         produto5.preco = 5000;
 
+        Produto.put(1, produto5);
         Produto.put(1, produto1);
         Produto.put(2, produto2);
         Produto.put(3, produto3);
         Produto.put(4, produto4);
 
-        System.out.println(Produto);
+        System.out.println(Produto.get(1));
+        System.out.println(Produto.get(2));
+        System.out.println(Produto.get(3));
+        System.out.println(Produto.get(4));
+        System.out.println(Produto.get(5));
 
-        Produto.get(1);
-        Produto.get(2);
-        Produto.get(3);
-        Produto.get(4);
+        System.out.println(Produto);
 
         System.out.println(Produto.containsKey(3));
         System.out.println(Produto.containsKey(10));
