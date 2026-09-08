@@ -33,5 +33,13 @@ public class TesteHashMap {
         Produto.put(4, produto4);
 
         System.out.println(Produto);
+
+        Produto.get(1);
+        Produto.get(2);
+        Produto.get(3);
+        Produto.get(4);
+
+        System.out.println(Produto.containsKey(3));
+        System.out.println(Produto.containsKey(10));
     }
 }
