@@ -1,12 +1,12 @@
 package collections.mapas;
 
 import collections.Listas.Produto;
-import collections.Listas.ProdutoService;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class TesteHashMap {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         HashMap<Integer, Produto> Produto = new HashMap<>();
 
@@ -46,8 +46,15 @@ public class TesteHashMap {
         System.out.println(Produto.remove(3));
         System.out.println(Produto.size());
         System.out.println(Produto.isEmpty());
+        System.out.println(Produto.keySet());
+        System.out.println(Produto.values());
+        System.out.println(Produto.entrySet());
 
-        System.out.println(Produto);
+        for (Map.Entry<Integer, Produto> integerProdutoEntry : Produto.entrySet()) {
+
+            System.out.println(integerProdutoEntry.getKey());
+            System.out.println(integerProdutoEntry.getValue());
+        }
 
         System.out.println(Produto.containsKey(3));
         System.out.println(Produto.containsKey(10));
