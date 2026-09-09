@@ -43,6 +43,10 @@ public class TesteHashMap {
         System.out.println(Produto.get(4));
         System.out.println(Produto.get(5));
 
+        System.out.println(Produto.remove(3));
+        System.out.println(Produto.size());
+        System.out.println(Produto.isEmpty());
+
         System.out.println(Produto);
 
         System.out.println(Produto.containsKey(3));
