@@ -10,6 +10,7 @@ public class TesteComparator {
         Comparator<Produto> produtos = new Comparator<Produto>() {
             @Override
             public int compare(Produto produto, Produto t1) {
+
                 return produto.nome.compareTo(t1.nome);
             }
         };
