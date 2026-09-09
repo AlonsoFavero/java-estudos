@@ -2,13 +2,14 @@ package collections.mapas;
 
 import collections.Listas.Produto;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.HashMap;
+
 
 public class TesteHashMap {
     public static void main(String[] args) {
 
-        HashMap<Integer, Produto> Produto = new HashMap<>();
+        Map<Integer, Produto> Produto = new HashMap<>();
 
         Produto produto1 = new Produto();
         Produto produto2 = new Produto();
