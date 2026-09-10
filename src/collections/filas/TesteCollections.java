@@ -1,9 +1,6 @@
 package collections.filas;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.TreeSet;
-import java.util.HashMap;
+import java.util.*;
 
 public class TesteCollections {
     public static void main(String[] args){
@@ -12,6 +9,11 @@ public class TesteCollections {
      HashSet<String> nomeUnicos = new HashSet<>();
      TreeSet<Integer> numerosOrdenados = new TreeSet<>();
      HashMap<Integer, String> clientePorId = new HashMap<>();
+     Queue<String> filaCliente = new LinkedList<>();
+
+        filaCliente.offer("João");
+        filaCliente.offer("Maria");
+        filaCliente.offer("Pedro");
 
         clientePorId.put(1,"João");
         clientePorId.put(2, "Maria");
@@ -34,6 +36,10 @@ public class TesteCollections {
         nomesClientes.add("Pedro");
         nomesClientes.add("João");
 
+        System.out.println(filaCliente.peek());
+        System.out.println(filaCliente);
+        System.out.println(filaCliente.poll());
+        System.out.println(filaCliente);
         System.out.println(clientePorId);
         System.out.println(clientePorId.get(2));
         System.out.println(numerosOrdenados);
