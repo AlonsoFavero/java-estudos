@@ -7,6 +7,13 @@ public class Produto implements Comparable <Produto>{
    public String nome;
    public double preco;
 
+   public Produto(){
+   }
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
     @Override
     public String toString() {
         return nome + " - R$" + preco ;
@@ -36,3 +43,5 @@ public class Produto implements Comparable <Produto>{
         return Double.compare(preco,produto.preco);
     }
 }
+
+
