@@ -14,7 +14,7 @@ public class TesteAtualizarEstoque {
 
         System.out.println(produtos);
         System.out.println(produtos.get("Mouse"));
-        produtos.put("Mouse", 17);
+        produtos.put("Mouse", produtos.get("Mouse") + 5);
         System.out.println(produtos);
         System.out.println(produtos.get("Mouse"));
 
