@@ -2,9 +2,8 @@ package collections.mapas;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
-public class TestePercorrerMap {
+public class TesteForEachMap {
     public static void main(String[] args){
 
         Map<String, Integer> produtos = new HashMap<>();
@@ -13,10 +12,10 @@ public class TestePercorrerMap {
         produtos.put("Mouse", 20);
         produtos.put("Celular", 5);
 
-        for(Entry<String, Integer> meusProdutos: produtos.entrySet()){
+        produtos.forEach((produto , quantidade) -> {
 
-            System.out.println(meusProdutos.getKey());
-            System.out.println(meusProdutos.getValue());
-        }
+            System.out.println(produto);
+            System.out.println(quantidade);
+        });
     }
 }
