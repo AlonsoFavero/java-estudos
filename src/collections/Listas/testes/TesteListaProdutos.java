@@ -1,4 +1,7 @@
-package collections.Listas;
+package collections.Listas.testes;
+
+import collections.Listas.Produto;
+import collections.Listas.ProdutoService;
 
 public class TesteListaProdutos {
     public static void main(String[] args) {

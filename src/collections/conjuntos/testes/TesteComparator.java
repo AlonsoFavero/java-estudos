@@ -1,4 +1,4 @@
-package collections.conjuntos;
+package collections.conjuntos.testes;
 
 import collections.Listas.Produto;
 import java.util.Comparator;

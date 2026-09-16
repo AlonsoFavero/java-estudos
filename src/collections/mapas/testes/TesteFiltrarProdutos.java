@@ -1,6 +1,4 @@
-package collections.mapas;
-
-import collections.Listas.Produto;
+package collections.mapas.testes;
 
 import java.util.HashMap;
 import java.util.Map;

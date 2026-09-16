@@ -1,4 +1,4 @@
-package collections.conjuntos;
+package collections.conjuntos.testes;
 
 import java.util.LinkedHashSet;
 
