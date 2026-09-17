@@ -3,7 +3,7 @@ package collections.mapas.testes;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TesteReplaceMap {
+public class TesteComputeIfAbsentMap {
     public static void main(String[] args){
 
         Map<String, Integer> produtos = new HashMap<>();
@@ -13,8 +13,8 @@ public class TesteReplaceMap {
         produtos.put("Celular", 5);
 
         System.out.println(produtos);
-        System.out.println(produtos.replace("Mouse", 30));
-        System.out.println(produtos.replace("Monitor", 50));
+        System.out.println(produtos.computeIfAbsent("Monitor", k -> 50));
+        System.out.println(produtos.computeIfAbsent("Mouse", k -> 99));
         System.out.println(produtos);
     }
 }
