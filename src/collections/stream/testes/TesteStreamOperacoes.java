@@ -7,6 +7,10 @@ public class TesteStreamOperacoes {
 
         List<Integer> numeros = List.of(10,3,5,8,2,7,4);
         List<Integer> todosMaioresQueZero = List.of(10,3,5,8,2,7,4);
+        List<Integer> semNegativos = List.of(10,3,5,8,2,7,4);
+
+        boolean resultados1 = semNegativos.stream()
+                .noneMatch(n -> n < 0);
 
         boolean resultados = todosMaioresQueZero.stream()
                 .allMatch(n -> n > 0);
@@ -16,5 +20,6 @@ public class TesteStreamOperacoes {
 
         System.out.println(resultado);
         System.out.println(resultados);
+        System.out.println(resultados1);
     }
 }
