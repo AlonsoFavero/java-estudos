@@ -7,9 +7,8 @@ public class TesteStreamOperacoes {
 
         List<Integer> numeros = List.of(10,3,5,8,2,7,4);
 
-        long resultado = numeros.stream()
-                .filter(n -> n > 5)
-                .count();
+        boolean resultado = numeros.stream()
+                .anyMatch(n -> n == 8);
 
         System.out.println(resultado);
     }
