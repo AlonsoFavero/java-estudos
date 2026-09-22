@@ -10,6 +10,7 @@ public class TesteOptional {
 
         System.out.println(produtos);
         System.out.println(produtos.isPresent());
+        produtos.ifPresent(valor -> System.out.println(valor));
         System.out.println(produto.orElse("valor padrão"));
         System.out.println(produto);
         System.out.println(produtos);
