@@ -17,7 +17,11 @@ public class TesteTryCacth {
         int valor = -1;
 
         if(valor < 0){
-            throw new IllegalArgumentException("mensagem de erro");
+            erro();
         }
+    }
+
+    static void erro() throws IllegalArgumentException{
+        throw new IllegalArgumentException("mensagem de erro");
     }
 }
