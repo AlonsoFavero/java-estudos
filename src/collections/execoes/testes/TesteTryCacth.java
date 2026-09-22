@@ -10,6 +10,8 @@ public class TesteTryCacth {
         }catch(ArithmeticException e){
 
             System.out.println(e);
+        }finally {
+            System.out.println("finalizando execução");
         }
     }
 }
